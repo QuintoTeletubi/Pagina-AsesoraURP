@@ -1,0 +1,333 @@
+@import "tailwindcss";
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* Colores de la Universidad Ricardo Palma - ACTUALIZADO A VERDE */
+.bg-urp-green {
+  background-color: #2e8b57; /* Verde esmeralda que permite ver bien el logo */
+}
+
+.text-urp-green {
+  color: #2e8b57;
+}
+
+.border-urp-green {
+  border-color: #2e8b57;
+}
+
+.hover\:bg-urp-green:hover {
+  background-color: #267349;
+}
+
+/* Eliminar las clases de color rojo anteriores */
+.bg-urp-red {
+  background-color: #2e8b57; /* Reemplazado con verde */
+}
+
+.text-urp-red {
+  color: #2e8b57; /* Reemplazado con verde */
+}
+
+.border-urp-red {
+  border-color: #2e8b57; /* Reemplazado con verde */
+}
+
+.hover\:bg-urp-red:hover {
+  background-color: #267349; /* Reemplazado con verde más oscuro */
+}
+
+/* Estilos adicionales para reemplazar algunas clases comunes de Tailwind */
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.bg-gray-50 {
+  background-color: #f9fafb;
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.text-white {
+  color: white;
+}
+
+.shadow-md {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+}
+
+.text-gray-200 {
+  color: #e5e7eb;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+}
+
+.space-x-4 > * + * {
+  margin-left: 1rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.bg-green-800 {
+  background-color: #166534;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.w-8 {
+  width: 2rem;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
+.bg-gray-300 {
+  background-color: #d1d5db;
+}
+
+.text-gray-700 {
+  color: #374151;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
+.border-t {
+  border-top-width: 1px;
+}
+
+.border-green-600 {
+  border-color: #059669;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.space-y-3 > * + * {
+  margin-top: 0.75rem;
+}
+
+.self-start {
+  align-self: flex-start;
+}
+/* Estilos para el sidebar */
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.duration-300 {
+  transition-duration: 300ms;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Estilos para tarjetas y elementos del dashboard */
+.shadow-sm {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.shadow-md {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Estilos para el switch toggle */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 2.75rem;
+  height: 1.5rem;
+}
+
+.transform {
+  transform: translateX(0);
+}
+
+.translate-x-1 {
+  transform: translateX(0.25rem);
+}
+
+.translate-x-5 {
+  transform: translateX(1.25rem);
+}
+/* Animaciones */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Transiciones */
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.duration-200 {
+  transition-duration: 200ms;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Transformaciones */
+.hover\:scale-105:hover {
+  transform: scale(1.05);
+}
+
+.hover\:translate-y-\[-2px\]:hover {
+  transform: translateY(-2px);
+}
+
+/* Animaciones para transiciones */
+.fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.slide-in {
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from { transform: translateY(10px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Aplicar animaciones a elementos */
+.calendar-cell:hover .advising-block {
+  transform: translateY(-2px);
+}

@@ -1,0 +1,50 @@
+/* Estilos específicos para la aplicación ASESORAUrp */
+.asesora-logo {
+  height: 40px;
+  margin-right: 12px;
+}
+
+.calendar-cell {
+  min-height: 80px;
+  transition: background-color 0.2s;
+}
+
+.calendar-cell:hover {
+  background-color: rgba(46, 139, 87, 0.05); /* Verde esmeralda con opacidad */
+}
+
+.advising-block {
+  border-radius: 4px;
+  padding: 8px;
+  margin-bottom: 4px;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+.advising-block:hover {
+  transform: scale(1.02);
+}
+
+.course-card {
+  transition: all 0.2s;
+}
+
+.course-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.course-card.selected {
+  border-color: #2e8b57; /* Verde esmeralda */
+  background-color: #f0fff0; /* Honeydew - verde muy claro */
+}
+
+/* Estilos para el login */
+.login-gradient-button {
+  background: linear-gradient(to right, #2e8b57, #20b2aa);
+}
+
+.login-gradient-button:hover {
+  background: linear-gradient(to right, #267349, #1a9e99);
+}
